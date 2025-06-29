@@ -2,10 +2,15 @@
   "name": "how-to-train-your-dragon-api",
   "version": "1.0.0",
   "main": "app.js",
+  "license": "ISC",
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18.x"
   }
 }

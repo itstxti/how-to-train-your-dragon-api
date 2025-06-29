@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const dragones = require('./data/dragones.json');
+const cors = require('cors'); // Añade esta línea
+
+app.use(cors());
 
 // Agrega esto antes de los otros endpoints
 app.get('/', (req, res) => {
