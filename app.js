@@ -2,6 +2,18 @@ const express = require('express');
 const app = express();
 const dragones = require('./data/dragones.json');
 
+// Agrega esto antes de los otros endpoints
+app.get('/', (req, res) => {
+  res.json({
+    message: "Bienvenido a la API de Dragones",
+    endpoints: {
+      todosLosDragones: "/dragones",
+      dragonAleatorio: "/dragones/random",
+      dragonPorId: "/dragones/:id"
+    }
+  });
+});
+
 app.get('/dragones', (req, res) => {
   res.json(dragones);
 });
