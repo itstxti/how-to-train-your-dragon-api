@@ -1,444 +1,1745 @@
 [
     {
         "id": 1,
-        "name": "Toothless",
-        "species": "Night Fury",
-        "class": "Strike",
-        "attack": "High",
-        "speed": "Maximum",
-        "armor": "Medium",
-        "firepower": "Medium",
-        "shotLimit": "High",
-        "venom": "N/A",
-        "jawStrength": "Low",
-        "stealth": "Very High",
-        "description": "Loyal and empathic with boundless, puppy-like energy",
-        "image": "https://i.ibb.co/sWRzzVD/toothless.png",
-        "classImage": "https://i.ibb.co/tJxggf1/class-Strike.png"
+        "species": "Armorwing",
+        "class": "Mystery",
+        "fireType": "Oxygen-acetylene",
+        "features": [
+            "Metal armor",
+            "Pair of twisted horns",
+            "Chain-whip tail",
+            "Long claws",
+            "Long spikes on the knees"
+        ],
+        "abilities": [
+            "Magnetic body",
+            "Whipping tail"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/22/ArmorwingRoar.ogg/revision/latest?cb=20161231000734",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/9/98/Armorwing.png/revision/latest?cb=20190917173506",
+        "stats": {
+            "attack": 12,
+            "speed": 7,
+            "armor": 50,
+            "firepower": 10,
+            "shotLimit": 4,
+            "venom": 0,
+            "jawStrength": 11,
+            "stealth": 1
+        }
     },
     {
         "id": 2,
-        "name": "Stormfly",
-        "species": "Deadly Nadder",
-        "class": "Tracker",
-        "attack": "Low",
-        "speed": "Low",
-        "armor": "Medium",
-        "firepower": "High",
-        "shotLimit": "High",
-        "venom": "Maximum",
-        "jawStrength": "Low",
-        "stealth": "Medium",
-        "description": "Precise and cunning in battle, yet warm and affectionate with friends old and new",
-        "image": "https://ibb.co/JnGcvd9",
-        "classImage": "https://i.ibb.co/xDyXV99/class-Tracker.png"
+        "species": "Bewilderbeast",
+        "class": "Tidal",
+        "fireType": "Masses of water that freeze upon impact when shot",
+        "features": [
+            "Large spikes protruding from back of neck",
+            "Small teeth compared to body ratio",
+            "Coral-like scales",
+            "Tail fins"
+        ],
+        "abilities": [
+            "Mind controlling dragons",
+            "Creating dragon nests out of their self-generated ice",
+            "Underwater adaptations"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/0/0c/Bewilderbeast_Roar.ogg",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/4/4d/Bewilderbeast.png",
+        "stats": {
+            "attack": 50,
+            "speed": 6,
+            "speedUnderwater": 18,
+            "armor": 38,
+            "firepower": 60,
+            "shotLimit": 8,
+            "venom": 0,
+            "jawStrength": 48,
+            "stealth": 2
+        }
     },
     {
         "id": 3,
-        "name": "Barf & Belch",
-        "species": "Hideous Zippleback",
+        "species": "Boneknapper",
         "class": "Mystery",
-        "attack": "Low",
-        "speed": "Medium",
-        "armor": "Low",
-        "firepower": "High",
-        "shotLimit": "High",
-        "venom": "N/A",
-        "jawStrength": "Low",
-        "stealth": "Maximum",
-        "description": "Truly a split personality! Barf & Belch are each fiercely independent, yet inextricably linked",
-        "image": "https://ibb.co/W60vcYX",
-        "classImage": "https://i.ibb.co/dLCGS9S/class-Mystery.png" 
+        "fireType": "Billowing flames",
+        "features": [
+            "Bone armor",
+            "Clubbed tail"
+        ],
+        "abilities": [
+            "Bone armor",
+            "Thundering roar"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/3/34/BoneknapperRoar.ogg/revision/latest?cb=20161231001014",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/7/70/Bonenapper-how-to-train-your-dragon.png/revision/latest?cb=20150617005517",
+        "stats": {
+            "attack": 7,
+            "speed": 10,
+            "armor": 18,
+            "firepower": 9,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 4,
+            "stealth": 8
+        }
     },
     {
         "id": 4,
-        "name": "Grump",
-        "species": "Hotburple",
-        "class": "Boulder",
-        "attack": "Low",
-        "speed": "Low",
-        "armor": "High",
-        "firepower": "Medium",
-        "shotLimit": "High",
-        "venom": "N/A",
-        "jawStrength": "Low",
-        "stealth": "Low",
-        "description": "A loyal, lava-launching helper -- when he isn't napping",
-        "image": "https://ibb.co/ZG03SZP",
-        "classImage": "https://i.ibb.co/5xzQDXx/class-Boulder.png"
+        "species": "Buffalord",
+        "class": "Mystery",
+        "fireType": "Explosive flames",
+        "features": [
+            "Armored body",
+            "Ram-like horns",
+            "Small rows of spines along back",
+            "Short legs"
+        ],
+        "abilities": [
+            "Inflating its body to an immense size",
+            "Shooting spines from any part of its body",
+            "Extremely potent saliva"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/7/7d/BuffalordRoar.ogg/revision/latest?cb=20161231001609",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/6/63/Buffalord_png.png/revision/latest?cb=20161212150338",
+        "stats": {
+            "attack": 8,
+            "speed": 6,
+            "armor": 16,
+            "firepower": 12,
+            "shotLimit": 6,
+            "venom": -20,
+            "jawStrength": 6,
+            "stealth": 4
+        }
     },
     {
         "id": 5,
-        "name": "Hookfang",
-        "species": "Monstrous Nightmare",
-        "class": "Stocker",
-        "attack": "High",
-        "speed": "High",
-        "armor": "Medium",
-        "firepower": "High",
-        "shotLimit": "Maximum",
-        "venom": "N/A",
-        "jawStrength": "Low",
-        "stealth": "Low",
-        "description": "Incendiary in temperament and short on patience, Hookfang would rather ignite 1st and think 2nd",
-        "image": "https://ibb.co/VYSxLGX",
-        "classImage": "https://i.ibb.co/BGcp37n/class-Stocker.png"
+        "species": "Catastrophic Quaken",
+        "class": "Boulder",
+        "fireType": "Magma slobber from trifurcated jaws",
+        "features": [
+            "Filled with spikes.",
+            "Triple-split jaw.",
+            "Tough rock-like skin."
+        ],
+        "abilities": [
+            "Curling into a boulder",
+            "Creating a shockwave"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/e/eb/CatastrophiQuakenRoar.ogg/revision/latest?cb=20161229032351",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/9/96/CatastrophicQuaken_infobox.png/revision/latest?cb=20240618124823",
+        "stats": {
+            "attack": 12,
+            "speed": 14,
+            "armor": 35,
+            "firepower": 10,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 20,
+            "stealth": 3
+        }
     },
     {
         "id": 6,
-        "name": "",
-        "species": "Light Fury",
-        "class": "Strike",
-        "attack": "High",
-        "speed": "Maximum",
-        "armor": "Medium",
-        "firepower": "Medium",
-        "shotLimit": "High",
-        "venom": "N/A",
-        "jawStrength": "Low",
-        "stealth": "Very High",
-        "description": "The feline-like Light Fury is gentle and playful by nature, like Toothless, but fiercely protective when danger is present",
-        "image": "https://ibb.co/CnYt8rS",
-        "classImage": "https://i.ibb.co/tJxggf1/class-Strike.png"
+        "species": "Cavern Crasher",
+        "class": "Mystery",
+        "fireType": "Bright green fire",
+        "features": [
+            "Glands that produce flammable mucus on back and tail",
+            "Collapsible skeleton",
+            "Upper beak",
+            "Absence of wings",
+            "Flat and rounded tail"
+        ],
+        "abilities": [
+            "Fitting through small spaces",
+            "Producing a special flammable mucus from its back",
+            "Burrowing",
+            "Immunity to Fireworm's venom"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/8/87/CavernCrasherRoar.ogg/revision/latest?cb=20161231051514",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/7/7d/131364321.png/revision/latest?cb=20161212150105",
+        "stats": {
+            "attack": 14,
+            "speed": 18,
+            "armor": 16,
+            "firepower": 20,
+            "shotLimit": 16,
+            "venom": 0,
+            "jawStrength": 8,
+            "stealth": 16
+        }
     },
     {
         "id": 7,
-        "name": "Meatlug",
-        "species": "Gronckle",
-        "class": "Boulder",
-        "attack": "Low",
-        "speed": "Low",
-        "armor": "High",
-        "firepower": "Medium",
-        "shotLimit": "High",
-        "venom": "N/A",
-        "jawStrength": "Low",
-        "stealth": "Low",
-        "description": "Exceedingly demonstrative and sweet, yet quite self-conscious despite her thick hide",
-        "image": "https://ibb.co/4SPQJsJ",
-        "classImage": "https://i.ibb.co/5xzQDXx/class-Boulder.png"
+        "species": "Changewing",
+        "class": "Mystery",
+        "fireType": "Hot, corrosive, viscous acid that can burn through wood, rock, and dragon-proof metal",
+        "features": [
+            "Side horns protruding from head",
+            "Antennae with leaf-like lobes",
+            "Underbite",
+            "Nasal horn"
+        ],
+        "abilities": [
+            "Camouflage",
+            "Prehensile tail",
+            "Hypnosis",
+            "Immunity to their own acid"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/a/a2/ChangewingRoar.ogg/revision/latest?cb=20161231052056",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/f/f5/Alacambiante.png/revision/latest?cb=20161214201426",
+        "stats": {
+            "attack": 9,
+            "speed": 14,
+            "armor": 1,
+            "firepower": 12,
+            "shotLimit": 10,
+            "venom": 0,
+            "jawStrength": 2,
+            "stealth": 20
+        }
     },
     {
         "id": 8,
-        "name": "Cloud Jumper",
-        "species": "Stormutter",
-        "class": "Sharp",
-        "attack": "Low",
-        "speed": "Low",
-        "armor": "Very Low",
-        "firepower": "N/A",
-        "shotLimit": "Very High",
-        "venom": "N/A",
-        "jawStrength": "N/A",
-        "stealth": "N/A",
-        "description": "Proud and confident",
-        "image": "https://ibb.co/0JznPFj",
-        "classImage": "https://i.ibb.co/tQKvgRJ/class-Sharp.png"
+        "species": "Crimson Goregutter",
+        "class": "Boulder",
+        "fireType": "Molten lava",
+        "features": [
+            "Metallic, moose-like antlers",
+            "Axe-shaped tail",
+            "Rock-shaped spines"
+        ],
+        "abilities": [
+            "Blazing antlers",
+            "Ear-splitting call"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/24/CrimsonGoregutterRoar.ogg/revision/latest?cb=20200610074938",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/6/63/THW-Crimson_Goregutter-Transparent.png/revision/latest?cb=20190203095312",
+        "stats": {
+            "attack": 17,
+            "speed": 10,
+            "armor": 18,
+            "firepower": 12,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 12,
+            "stealth": 13
+        }
     },
     {
         "id": 9,
-        "name": "Skull Crusher",
-        "species": "Rumblehorn",
+        "species": "Deadly Nadder",
         "class": "Tracker",
-        "attack": "Low",
-        "speed": "Low",
-        "armor": "Low",
-        "firepower": "Low",
-        "shotLimit": "Low",
-        "venom": "N/A",
-        "jawStrength": "Low",
-        "stealth": "N/A",
-        "description": "Doggedly determined when he's caught a scent",
-        "image": "https://ibb.co/B6rZb4X",
-        "classImage": "https://i.ibb.co/xDyXV99/class-Tracker.png"
+        "fireType": "Magnesium fire",
+        "features": [
+            "Nasal horn",
+            "Spiky crown",
+            "Spiny tail",
+            "Beak-like upper jaw",
+            "Overbite"
+        ],
+        "abilities": [
+            "Spine shot",
+            "Incredible sense of smell",
+            "Enhanced speed",
+            "Prehensile tail"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/2a/DeadlyNadderRoar.ogg/revision/latest?cb=20161231083551",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/d/dd/NADDER.png/revision/latest?cb=20220801133236",
+        "stats": {
+            "attack": 10,
+            "speed": 8,
+            "armor": 16,
+            "firepower": 18,
+            "shotLimit": 6,
+            "venom": 16,
+            "jawStrength": 5,
+            "stealth": 10
+        }
     },
     {
         "id": 10,
-        "name": "",
-        "species": "Armor Wing",
+        "species": "Death Song",
         "class": "Mystery",
-        "attack": "Low",
-        "speed": "Low",
-        "armor": "Maximum",
-        "firepower": "Low",
-        "shotLimit": "Low",
-        "venom": "N/A",
-        "jawStrength": "Low",
-        "stealth": "Very Low",
-        "description": "Metal-Plated Plunderer",
-        "image": "https://ibb.co/Np6X5W9",
-        "classImage": "https://i.ibb.co/dLCGS9S/class-Mystery.png"
+        "fireType": "Amber-like substance that hardens quickly",
+        "features": [
+            "Colorful wings",
+            "Fins on the head",
+            "Long spines along the back",
+            "Long horns",
+            "Barbles"
+        ],
+        "abilities": [
+            "Siren-like luring song",
+            "Immunity to eels",
+            "Immunity to their own siren-like luring songs"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/d/d4/DeathSongRoar.ogg/revision/latest?cb=20161231052704",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/9/95/1481796023720.png/revision/latest?cb=20240616061647",
+        "stats": {
+            "attack": 16,
+            "speed": 17,
+            "armor": 16,
+            "firepower": 13,
+            "shotLimit": 8,
+            "venom": 0,
+            "jawStrength": 10,
+            "stealth": 0
+        }
     },
     {
         "id": 11,
-        "name": "",
-        "species": "Eruptodon",
-        "class": "Boulder",
-        "attack": "Low",
-        "speed": "Low",
-        "armor": "Very High",
-        "firepower": "Low",
-        "shotLimit": "Low",
-        "venom": "N/A",
-        "jawStrength": "Low",
-        "stealth": "Very Low",
-        "description": "Volcanic & valiant",
-        "image": "https://ibb.co/MZdm4mk",
-        "classImage": "https://i.ibb.co/5xzQDXx/class-Boulder.png"
+        "species": "Deathgripper",
+        "class": "Strike",
+        "fireType": "Rabid acid flame bursts",
+        "features": [
+            "Protruding retractable tusks",
+            "Plate armor along the back",
+            "Venomous stinger sheathed at the tip of the telescopic tail",
+            "Jagged pincers"
+        ],
+        "abilities": [
+            "Sedative sting",
+            "Venomous teeth"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/f/f4/DeathgripperRoar.ogg/revision/latest?cb=20200610074110",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/d/d1/Deathgripper-Transparent.png/revision/latest?cb=20181120000442",
+        "stats": {
+            "attack": 27,
+            "speed": 12,
+            "armor": 20,
+            "firepower": 12,
+            "shotLimit": 8,
+            "venom": 12,
+            "jawStrength": 16,
+            "stealth": 6
+        }
     },
     {
         "id": 12,
-        "name": "",
-        "species": "Night Terror",
-        "class": "Stocker",
-        "attack": "Very Low",
-        "speed": "Low",
-        "armor": "Very Low",
-        "firepower": "Low",
-        "shotLimit": "Low",
-        "venom": "N/A",
-        "jawStrength": "Very Low",
-        "stealth": "Low",
-        "description": "Shy at first, but great as allies once trust is built",
-        "image": "https://ibb.co/8P0gHDZ",
-        "classImage": "https://i.ibb.co/BGcp37n/class-Stocker.png"
+        "species": "Dramillion",
+        "class": "Mystery",
+        "fireType": "Flaming facsimiles",
+        "features": [
+            "Spiky head",
+            "Small forelimbs",
+            "Finned tail"
+        ],
+        "abilities": [
+            "Mimic fire from other dragons",
+            "Sharing fire reserves",
+            "Camouflage (Titan Wings only)"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/4/40/DramillionRoar.ogg/revision/latest?cb=20200610072852",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/e/ed/Dramillion_Render.png/revision/latest?cb=20191012131832",
+        "stats": {
+            "attack": 18,
+            "speed": 14,
+            "armor": 8,
+            "firepower": 20,
+            "shotLimit": 40,
+            "venom": 0,
+            "jawStrength": 6,
+            "stealth": 8
+        }
     },
     {
         "id": 13,
-        "name": "",
-        "species": "Seashocker",
-        "class": "Tidal",
-        "attack": "Low",
-        "speed": "Medium",
-        "armor": "Low",
-        "firepower": "Very Low",
-        "shotLimit": "Low",
-        "venom": "High",
-        "jawStrength": "Very Low",
-        "stealth": "Very Low",
-        "description": "Masters of the sneak attack",
-        "image": "https://ibb.co/brRD9gT",
-        "classImage": "https://i.ibb.co/YNgQC44/class-Tidal.png"
+        "species": "Eruptodon",
+        "class": "Boulder",
+        "fireType": "Large-scale lava spew",
+        "features": [
+            "Spiky lobes and protrusions on back and tail",
+            "Large, round head",
+            "Tiny forelegs"
+        ],
+        "abilities": [
+            "Burrowing through the crust of a dormant volcano",
+            "Eating extremely large amounts of lava",
+            "Stopping and causing volcanic eruptions",
+            "Lava-proof skin",
+            "Heat-resistant saliva"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/8/85/EruptodonRoar.ogg/revision/latest?cb=20171225103630",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/1/19/Eruptodon_Render.png/revision/latest?cb=20240616061955",
+        "stats": {
+            "attack": 9,
+            "speed": 7,
+            "armor": 36,
+            "firepower": 8,
+            "shotLimit": 7,
+            "venom": 0,
+            "jawStrength": 14,
+            "stealth": 2
+        }
     },
     {
         "id": 14,
-        "name": "",
-        "species": "Skrill",
-        "class": "Strike",
-        "attack": "Low",
-        "speed": "High",
-        "armor": "Low",
-        "firepower": "Low",
-        "shotLimit": "Very Low",
-        "venom": "N/A",
-        "jawStrength": "Very Low",
-        "stealth": "Low",
-        "description": "Belligerent and as unpredictable as lightning strikes",
-        "image": "https://ibb.co/DVSLb7d",
-        "classImage": "https://i.ibb.co/tJxggf1/class-Strike.png"
+        "species": "Fireworm",
+        "class": "Stoker",
+        "fireType": "Firecomb: A topical and flammable gel",
+        "features": [
+            "Four or five pair of legs",
+            "Glowing body"
+        ],
+        "abilities": [
+            "White-hot skin"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/5a/AverageFirewormRoar.ogg/revision/latest?cb=20161228070752",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/0/00/HTTYD3-Fireworm1-Transparent.png/revision/latest?cb=20190402220429",
+        "stats": {
+            "attack": 4,
+            "speed": 3,
+            "armor": 5,
+            "firepower": 30,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 0,
+            "stealth": 6
+        }
     },
     {
         "id": 15,
-        "name": "",
-        "species": "Snaptrapper",
-        "class": "Mystery",
-        "attack": "Low",
-        "speed": "Very Low",
-        "armor": "Very Low",
-        "firepower": "Very Low",
-        "shotLimit": "Very Low",
-        "venom": "Very High",
-        "jawStrength": "High",
-        "stealth": "Maximum",
-        "description": "Temptation and terror to the fourth power",
-        "image": "https://ibb.co/ZcNzyfj",
-        "classImage": "https://i.ibb.co/dLCGS9S/class-Mystery.png"
+        "species": "Fireworm Queen",
+        "class": "Stoker",
+        "fireType": "Firecomb: A topical and flammable gel",
+        "features": [
+            "Four or five pair of legs",
+            "Glowing body",
+            "Long twisted horns"
+        ],
+        "abilities": [
+            "White-hot skin",
+            "Venom to reignite other Stoker Class dragons"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/0/03/FirewormQueenRoar.ogg/revision/latest?cb=20161228071052",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/23/Fireworm_Queen_0.5.png/revision/latest?cb=20240618124015",
+        "stats": {
+            "attack": 16,
+            "speed": 12,
+            "armor": 15,
+            "firepower": 19,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 0,
+            "stealth": 6
+        }
     },
     {
         "id": 16,
-        "name": "",
-        "species": "Terrible Terror",
-        "class": "Stocker",
-        "attack": "Low",
-        "speed": "Low",
-        "armor": "Low",
-        "firepower": "Low",
-        "shotLimit": "Low",
-        "venom": "High",
-        "jawStrength": "Very Low",
-        "stealth": "Low",
-        "description": "Inquisitive and curious animals, their only downfall is their territorial in-fighting",
-        "image": "https://ibb.co/ZXLvNJq",
-        "classImage": "https://i.ibb.co/BGcp37n/class-Stocker.png"
+        "species": "Flightmare",
+        "class": "Mystery",
+        "fireType": "Paralyzing toxic mist, Green acid blasts",
+        "features": [
+            "Wing tendrils",
+            "Split tail",
+            "Translucent wings",
+            "Barbells",
+            "Ghostlike glow"
+        ],
+        "abilities": [
+            "Glows brighter when consuming glowing algae",
+            "Loud banshee-like scream",
+            "Paralyzing targets with its mist"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/a/ac/FlightmareRoar.ogg/revision/latest?cb=20161231053629",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/3/31/Flightmare_infobox.png/revision/latest?cb=20161212152338",
+        "stats": {
+            "attack": 10,
+            "speed": 8,
+            "armor": 4,
+            "firepower": 7,
+            "shotLimit": 4,
+            "venom": 10,
+            "jawStrength": 4,
+            "stealth": 7
+        }
     },
     {
         "id": 17,
-        "name": "",
-        "species": "Thunderdrum",
-        "class": "Tidal",
-        "attack": "Low",
-        "speed": "Medium",
-        "armor": "Low",
-        "firepower": "Low",
-        "shotLimit": "Low",
-        "venom": "N/A",
-        "jawStrength": "Low",
-        "stealth": "Low",
-        "description": "Strident and assertive, the loud Thunderdrum always makes its feelings known",
-        "image": "https://ibb.co/nbFY2tG",
-        "classImage": "https://i.ibb.co/YNgQC44/class-Tidal.png"
+        "species": "Green Death",
+        "class": "Stoker",
+        "fireType": "Methane",
+        "features": [
+            "Three pairs of eyes",
+            "Massive size",
+            "Clubbed tail"
+        ],
+        "abilities": [
+            "Magma-proof skin"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/e/ec/Green_Death_Roar_%28School_of_Dragons%29.mp3/revision/latest?cb=20240401010858",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/51/Green_Death_%28from_School_of_Dragons%29.png/revision/latest?cb=20240401203739",
+        "stats": {
+            "attack": 28,
+            "speed": 7,
+            "armor": 30,
+            "firepower": 27,
+            "shotLimit": 9,
+            "venom": 0,
+            "jawStrength": 22,
+            "stealth": 2
+        }
     },
     {
         "id": 18,
-        "name": "",
-        "species": "Timberjack",
+        "species": "Grim Gnasher",
         "class": "Sharp",
-        "attack": "Low",
-        "speed": "Medium",
-        "armor": "Low",
-        "firepower": "Low",
-        "shotLimit": "Low",
-        "venom": "N/A",
-        "jawStrength": "Very Low",
-        "stealth": "Low",
-        "description": "Modest serenity balanced with fierce protection of their riders",
-        "image": "https://ibb.co/QQycCHJ",
-        "classImage": "https://i.ibb.co/tQKvgRJ/class-Sharp.png"
+        "fireType": "Teeth darts",
+        "features": [
+            "Snake-like body",
+            "Lots of horns and spikes",
+            "Shark-like teeth"
+        ],
+        "abilities": [
+            "Regenerating and shooting teeth",
+            "Immunity to Slitherwing venom"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/3/35/GrimGnasherRoar.ogg/revision/latest?cb=20200610071119",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/f/fb/Grimgnasher_Transparent.png/revision/latest?cb=20170828121718",
+        "stats": {
+            "attack": 10,
+            "speed": 12,
+            "armor": 7,
+            "firepower": 9,
+            "shotLimit": 5,
+            "venom": 0,
+            "jawStrength": 12,
+            "stealth": 7
+        }
     },
     {
         "id": 19,
-        "name": "",
-        "species": "Whispering Death",
+        "species": "Gronckle",
         "class": "Boulder",
-        "attack": "Low",
-        "speed": "Low",
-        "armor": "Low",
-        "firepower": "Very Low",
-        "shotLimit": "Very Low",
-        "venom": "Very Low",
-        "jawStrength": "Very Low",
-        "stealth": "Low",
-        "description": "Blindly aggressive and capable of holding a grudge like no other dragon",
-        "image": "https://ibb.co/kHd6HgD",
-        "classImage": "https://i.ibb.co/5xzQDXx/class-Boulder.png"
+        "fireType": "Heptane/oxygen + rock = Lava blast",
+        "features": [
+            "Bumps on body",
+            "Small wing to body ratio",
+            "Clubbed tail",
+            "Sharp canines",
+            "Blunt nasal horn",
+            "Round head"
+        ],
+        "abilities": [
+            "Bump scatter blast",
+            "Immunity to dragon root",
+            "Creating Gronckle Iron",
+            "Rechargeable firepower",
+            "Flying backwards and in all directions",
+            "Hovering and dropping in the air"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/28/GronckleRoar.ogg/revision/latest?cb=20161229035841",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/b/b8/HTTYD_Gronckle.png/revision/latest?cb=20171031142609",
+        "stats": {
+            "attack": 8,
+            "speed": 4,
+            "armor": 20,
+            "firepower": 14,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 8,
+            "stealth": 5
+        }
     },
     {
         "id": 20,
-        "name": "Baby Gronckle",
-        "species": "Gronckle",
-        "class": "Boulder",
-        "attack": "Very Low",
-        "speed": "Very Low",
-        "armor": "Low",
-        "firepower": "Low",
-        "shotLimit": "Very Low",
-        "venom": "N/A",
-        "jawStrength": "Very Low",
-        "stealth": "Very Low",
-        "description": "Bouncing boulders of joy that need lots of sleep, food, and attention",
-        "image": "https://ibb.co/2ZkW46D",
-        "classImage": "https://i.ibb.co/5xzQDXx/class-Boulder.png"
+        "species": "Hideous Zippleback",
+        "class": "Mystery",
+        "fireType": "Ammonium nitrate mixed with anhydrous hydrazine",
+        "features": [
+            "Two heads",
+            "Horns",
+            "Split tail",
+            "Lobs along necks, back, and tail"
+        ],
+        "abilities": [
+            "Flaming ouroboros",
+            "Transmitting brains"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/6/60/HideousZipplebackRoar.ogg/revision/latest?cb=20161231055814",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/1/1a/BarfBelchRender.png/revision/latest?cb=20240616062843",
+        "stats": {
+            "attack": 12,
+            "speed": 10,
+            "armor": 10,
+            "firepower": 14,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 6,
+            "stealth": 22
+        }
     },
     {
         "id": 21,
-        "name": "Baby Nadder",
-        "species": "Deadly Nadder",
-        "class": "Tracker",
-        "attack": "Very Low",
-        "speed": "Low",
-        "armor": "Very Low",
-        "firepower": "Low",
-        "shotLimit": "Low",
-        "venom": "Low",
-        "jawStrength": "Very Low",
-        "stealth": "Very Low",
-        "description": "Quick, Curious, and prone to temper-tantrums - Like the toddlers of the dragon world",
-        "image": "https://ibb.co/tccLp46",
-        "classImage": "https://i.ibb.co/xDyXV99/class-Tracker.png"
+        "species": "Hobblegrunt",
+        "class": "Stoker",
+        "fireType": "Ethane expectorant",
+        "features": [
+            "Large head frill",
+            "Tail fin",
+            "Underbite"
+        ],
+        "abilities": [
+            "Color changing skin based on mood",
+            "Detecting frill",
+            "Altering other dragons' mood by changing its color",
+            "Predicting the future"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/6/67/HobblegruntRoar.ogg/revision/latest?cb=20161228065222",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/5e/1481251229305.png/revision/latest?cb=20190507062928",
+        "stats": {
+            "attack": 18,
+            "speed": 4,
+            "armor": 16,
+            "firepower": 18,
+            "shotLimit": 13,
+            "venom": 0,
+            "jawStrength": 7,
+            "stealth": 5
+        }
     },
     {
         "id": 22,
-        "name": "Baby Zippleback",
-        "species": "Hideous Zippleback",
-        "class": "Mystery",
-        "attack": "Low",
-        "speed": "Low",
-        "armor": "Very Low",
-        "firepower": "Low",
-        "shotLimit": "Very Low",
-        "venom": "N/A",
-        "jawStrength": "Very Low",
-        "stealth": "Low",
-        "description": "Double Trouble",
-        "image": "https://ibb.co/2tY10wc",
-        "classImage": "https://i.ibb.co/dLCGS9S/class-Mystery.png"
+        "species": "Hobgobbler",
+        "class": "Mystery / Stoker",
+        "fireType": "Incendiary slobber",
+        "features": [
+            "Small thin spines on the back",
+            "Small curved nasal horn"
+        ],
+        "abilities": [
+            "Feeding frenzy",
+            "Multiplying",
+            "Covering themselves with their own slobber to slip through tight spots"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/1/15/HobgobblerRoar.ogg/revision/latest?cb=20200610080432",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/50/THW-Hobgobbler-Transparent.png/revision/latest?cb=20190202204345",
+        "stats": {
+            "attack": 8,
+            "speed": 8,
+            "armor": 4,
+            "firepower": 6,
+            "shotLimit": 28,
+            "venom": 0,
+            "jawStrength": 12,
+            "stealth": 18
+        }
     },
     {
         "id": 23,
-        "name": "Drago's Bewilderbeast",
-        "species": "Bewilderbeast",
-        "class": "Tidal",
-        "attack": "Maximum",
-        "speed": "Low",
-        "armor": "Very High",
-        "firepower": "Maximum",
-        "shotLimit": "Low",
-        "venom": "N/A",
-        "jawStrength": "Very High",
-        "stealth": "N/A",
-        "description": "Scarred and bred for battle",
-        "image": "https://ibb.co/B298NzZ",
-        "classImage": "https://i.ibb.co/YNgQC44/class-Tidal.png"
+        "species": "Hotburple",
+        "class": "Boulder",
+        "fireType": "Heptane/oxygen + rock = Lava blast",
+        "features": [
+            "Eyes lower on head",
+            "Clubbed tail"
+        ],
+        "abilities": [
+            "Sleep-flying",
+            "Immense jaw strength that can bite through Dragon Proof Metal"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/3/34/HotburpleRoar.ogg/revision/latest?cb=20161229040506",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/f/f1/1481624586025.png/revision/latest?cb=20161213102756",
+        "stats": {
+            "attack": 8,
+            "speed": 4,
+            "armor": 20,
+            "firepower": 14,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 8,
+            "stealth": 5
+        }
     },
     {
         "id": 24,
-        "name": "Valka's Bewilderbeast",
-        "species": "Bewilderbeast",
-        "class": "Tidal",
-        "attack": "Maximum",
-        "speed": "Low",
-        "armor": "Very High",
-        "firepower": "Maximum",
-        "shotLimit": "Low",
-        "venom": "N/A",
-        "jawStrength": "Very High",
-        "stealth": "N/A",
-        "description": "The benevolent and leonine king of all dragons",
-        "image": "https://ibb.co/cC5fk3n",
-        "classImage": "https://i.ibb.co/YNgQC44/class-Tidal.png"
+        "species": "Large Shadow Wing",
+        "class": "Stoker",
+        "fireType": "Sonic roar",
+        "features": [
+            "Triangular spines along back",
+            "Four spines on tail tip",
+            "Rounded head and snout"
+        ],
+        "abilities": [
+            "Summoning Small Shadow Wings to attach onto its wings and become its artillery guns"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/57/ShadowWingRoar.ogg/revision/latest?cb=20200610100504",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/5a/ShadowWing456.png/revision/latest/scale-to-width-down/533?cb=20170227204120",
+        "stats": {
+            "attack": 25,
+            "speed": 14,
+            "armor": 15,
+            "firepower": 18,
+            "shotLimit": 60,
+            "venom": 0,
+            "jawStrength": 12,
+            "stealth": 4
+        }
     },
     {
         "id": 25,
-        "name": "",
-        "species": "Death Song",
-        "class": "Mystery",
-        "attack": "Low",
-        "speed": "High",
-        "armor": "Low",
-        "firepower": "Low",
-        "shotLimit": "Low",
-        "venom": "N/A",
-        "jawStrength": "Low",
-        "stealth": "N/A",
-        "description": "Enticing and siren-like, this species of dragon is decidedly solitary",
-        "image": "https://ibb.co/QKBRQBj",
-        "classImage": "https://i.ibb.co/dLCGS9S/class-Mystery.png"
+        "species": "Light Fury",
+        "class": "Strike",
+        "fireType": "Acetylene and oxygen-shaped plasma charges",
+        "features": [
+            "Cat-like eyes",
+            "Long, thin ridge running down the spine",
+            "Triangular tail flukes",
+            "Four small nubs on the head",
+            "Long, thin ridge on legs"
+        ],
+        "abilities": [
+            "Cloaking via plasma blasts",
+            "Camouflage",
+            "Stealth flight",
+            "Reflective scales",
+            "Retractable teeth",
+            "Dive-bombing"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/4/40/LightFuryRoar.ogg/revision/latest?cb=20200611140402",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/d/d8/THW-Unnamed_Light_Fury-Transparent.png/revision/latest?cb=20190202201459",
+        "stats": {
+            "attack": 15,
+            "speed": 20,
+            "armor": 18,
+            "firepower": 14,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 6,
+            "stealth": 18
+        }
     },
     {
         "id": 26,
-        "name": "",
-        "species": "Dramillion",
+        "species": "Monstrous Nightmare",
+        "class": "Stoker",
+        "fireType": "Kerosene gel",
+        "features": [
+            "Double-clawed wings",
+            "Two pairs of long horns",
+            "Sharp spines",
+            "Snake-like neck",
+            "Snake-like tail with frills",
+            "Barbels",
+            "Nasal horn",
+            "Flammable gel on skin"
+        ],
+        "abilities": [
+            "Self-immolation",
+            "Wing blast",
+            "Jaw expansion",
+            "Creating Monstrous Nightmare Gel"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/1/1b/MonstrousNightmareRoar.ogg/revision/latest?cb=20161228064658",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/56/1481529221423.png/revision/latest?cb=20180309230815",
+        "stats": {
+            "attack": 15,
+            "speed": 16,
+            "armor": 12,
+            "firepower": 15,
+            "shotLimit": 10,
+            "venom": 3,
+            "jawStrength": 6,
+            "stealth": 9
+        }
+    },
+    {
+        "id": 27,
+        "species": "Night Fury",
+        "class": "Strike",
+        "fireType": "Acetylene/Oxygen Shaped Charges",
+        "features": [
+            "Cat-like eyes",
+            "Ear-like appendages",
+            "Nubs and tendrils protruding from head",
+            "Fins behind the hind legs",
+            "Tail fins"
+        ],
+        "abilities": [
+            "Dive-bombing",
+            "Retractable teeth",
+            "Echolocation",
+            "Splitting spines for better maneuverability",
+            "Blending in with the night sky",
+            "Cloaking with electricity"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/c/c2/NightFuryRoar.ogg/revision/latest?cb=20161227154253",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/2e/NF.png/revision/latest?cb=20180803080149",
+        "stats": {
+            "attack": 15,
+            "speed": 20,
+            "armor": 18,
+            "firepower": 14,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 6,
+            "stealth": 18
+        }
+    },
+    {
+        "id": 28,
+        "species": "Night Terror",
+        "class": "Stoker",
+        "fireType": "Coalescing fire streams (forms giant fireball in flocks)",
+        "features": [
+            "Double nasal horn",
+            "Horn under chin",
+            "Short fattish tail with four or more short, thin spikes"
+        ],
+        "abilities": [
+            "Creates massive flocks to appear as a larger dragon",
+            "Collective fireball formation"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/2a/NightTerrorRoar.ogg/revision/latest?cb=20161228065523",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/d/d6/Nightterror_infobox.png/revision/latest?cb=20240616063121",
+        "stats": {
+            "attack": 6,
+            "speed": 6,
+            "armor": 4,
+            "firepower": 10,
+            "shotLimit": 5,
+            "venom": 0,
+            "jawStrength": 3,
+            "stealth": 14
+        }
+    },
+    {
+        "id": 29,
+        "species": "Raincutter",
+        "class": "Sharp",
+        "fireType": "Rain-resistant fireballs, Blasts of water",
+        "features": [
+            "Large sharp fins on the back and head",
+            "Nasal horn",
+            "Elongated neck",
+            "Short hooked tendrils under the chin",
+            "Larger lower jaw"
+        ],
+        "abilities": [
+            "Aerodynamic fins used for flight and offense",
+            "Picking up food with its long neck"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/6/67/RaincutterRoar.ogg/revision/latest?cb=20161229102934",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/3/3b/HTTYD2-Raincutter-Transparent.png/revision/latest?cb=20190821175114",
+        "stats": {
+            "attack": 8,
+            "speed": 8,
+            "armor": 6,
+            "firepower": 12,
+            "shotLimit": 10,
+            "venom": 6,
+            "jawStrength": 5,
+            "stealth": 14
+        }
+    },
+    {
+        "id": 30,
+        "species": "Razorwhip",
+        "class": "Sharp",
+        "fireType": "Bright blue fire",
+        "features": [
+            "Horn on snout",
+            "Sharp spines",
+            "Spikes on the edge of wings",
+            "Reflective scales"
+        ],
+        "abilities": [
+            "Sharp and telescopic prehensile tail that can be used as a whip",
+            "Precise and easily maneuverable in flight",
+            "Poisonous tears",
+            "Shooting tail barbs",
+            "Armor-like Scales"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/c/c5/RazorwhipRoar.ogg/revision/latest?cb=20161229103110",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/53/Sisalladura.png/revision/latest?cb=20161005211427",
+        "stats": {
+            "attack": 18,
+            "speed": 18,
+            "armor": 32,
+            "firepower": 12,
+            "shotLimit": 10,
+            "venom": 8,
+            "jawStrength": 7,
+            "stealth": 5
+        }
+    },
+    {
+        "id": 31,
+        "species": "Red Death",
+        "class": "Stoker",
+        "fireType": "Methane",
+        "features": [
+            "Clubbed tail",
+            "Three pairs of eyes",
+            "Massive size",
+            "Head frill",
+            "Bumps and warts all over body"
+        ],
+        "abilities": [
+            "Emits homing signal to control other dragons",
+            "Magma-proof skin",
+            "Vacuum mouth"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/5a/RedDeathRoar.ogg/revision/latest?cb=20161228070239",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/e/e4/Red_Death_flying_%28transparent%29.png/revision/latest?cb=20240331001403",
+        "stats": {
+            "attack": 28,
+            "speed": 7,
+            "armor": 30,
+            "firepower": 27,
+            "shotLimit": 9,
+            "venom": 0,
+            "jawStrength": 22,
+            "stealth": 2
+        }
+    },
+    {
+        "id": 32,
+        "species": "Rumblehorn",
+        "class": "Tracker",
+        "fireType": "Flaming rock \"missiles\"",
+        "features": [
+            "Clubbed tail",
+            "Jackhammer-like maw",
+            "Armored neck",
+            "Long horns on the head",
+            "Small spines on the back and tail"
+        ],
+        "abilities": [
+            "Tracking",
+            "Disaster detecting",
+            "Head ramming"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/1/10/RumblehornRoar.ogg/revision/latest?cb=20161231084347",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/d/df/1481798442360.png/revision/latest?cb=20180402070808",
+        "stats": {
+            "attack": 11,
+            "speed": 7,
+            "armor": 12,
+            "firepower": 22,
+            "shotLimit": 4,
+            "venom": 0,
+            "jawStrength": 5,
+            "stealth": 6
+        }
+    },
+    {
+        "id": 33,
+        "species": "Sandbuster",
         "class": "Mystery",
-        "attack": "Low",
-        "speed": "Medium",
-        "armor": "Low",
-        "firepower": "Low",
-        "shotLimit": "Maximum",
-        "venom": "N/A",
-        "jawStrength": "Very Low",
-        "stealth": "Very Low",
-        "description": "Imitative",
-        "image": "https://ibb.co/ysvb2c2",
-        "classImage": "https://i.ibb.co/dLCGS9S/class-Mystery.png"
+        "fireType": "Fusing blasts",
+        "features": [
+            "Large head",
+            "Long neck",
+            "Prehensile tail",
+            "Spikes along side of body"
+        ],
+        "abilities": [
+            "Burrowing",
+            "Prehensile Tail",
+            "Fire Ricochet on Impact"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/c/ce/SandbusterRoar.ogg/revision/latest?cb=20200610061818",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/4/45/Sandbuster_Transparent.png/revision/latest?cb=20171101191920",
+        "stats": {
+            "attack": 13,
+            "speed": 11,
+            "armor": 8,
+            "firepower": 10,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 6,
+            "stealth": 17
+        }
+    },
+    {
+        "id": 34,
+        "species": "Scauldron",
+        "class": "Tidal",
+        "fireType": "Boiling hot water",
+        "features": [
+            "Long neck",
+            "Elastic lower jaw cavity",
+            "Fan-like tailfin",
+            "Nasal horn",
+            "Long whisker-like tendrils",
+            "Huge stomach for storage",
+            "Small feet with long claws"
+        ],
+        "abilities": [
+            "Venomous Teeth",
+            "Immunity to the Blue Oleander",
+            "Electroreception"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/a/a5/ScauldronRoar.ogg/revision/latest?cb=20161228082618",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/a/a9/ScauldronTransparent.png/revision/latest?cb=20161209081438",
+        "stats": {
+            "attack": 10,
+            "speed": 6,
+            "armor": 6,
+            "firepower": 14,
+            "shotLimit": 14,
+            "venom": 10,
+            "jawStrength": 4,
+            "stealth": 10
+        }
+    },
+    {
+        "id": 35,
+        "species": "Screaming Death",
+        "class": "Boulder",
+        "fireType": "Gatling concentric rings of fireballs, Spitting multiple fireballs in a single shot",
+        "features": [
+            "Long snake-like body",
+            "Large chomping mouth",
+            "Rows of teeth",
+            "Small wings",
+            "Spiny frills along underbelly",
+            "Red spikes on head",
+            "Expandable spiny frill layers on neck",
+            "Rough scales"
+        ],
+        "abilities": [
+            "Spine shot",
+            "Disorienting shriek",
+            "Tunneling",
+            "Multiple rounds of fireballs"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/8/8c/ScreamingDeathRoar.ogg/revision/latest?cb=20161229042156",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/27/Grito_Mortal.png/revision/latest?cb=20161005205952",
+        "stats": {
+            "attack": 16,
+            "speed": 8,
+            "armor": 20,
+            "firepower": 10,
+            "shotLimit": 2,
+            "venom": 10,
+            "jawStrength": 11,
+            "stealth": 14
+        }
+    },
+    {
+        "id": 36,
+        "species": "Scuttleclaw",
+        "class": "Sharp",
+        "fireType": "Green/orange fire",
+        "features": [
+            "Zippleback-like lobs along back",
+            "Nadder-based structure",
+            "Round head"
+        ],
+        "abilities": [
+            "Powerful bite",
+            "Flammable drool"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/2f/ScuttleclawRoar.ogg/revision/latest?cb=20161229104113",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/a/a0/Clavagarras.png/revision/latest?cb=20161211190223",
+        "stats": {
+            "attack": 10,
+            "speed": 16,
+            "armor": 8,
+            "firepower": 10,
+            "shotLimit": 8,
+            "venom": 2,
+            "jawStrength": 3,
+            "stealth": 10
+        }
+    },
+    {
+        "id": 37,
+        "species": "Seashocker",
+        "class": "Tidal",
+        "fireType": "Electric stun charges",
+        "features": [
+            "Two heads",
+            "Two fins",
+            "Sharp dorsal blades",
+            "Pointed snout",
+            "Serrated jaws",
+            "Curved wings"
+        ],
+        "abilities": [
+            "Cutting ice with its dorsal blades",
+            "Echolocation",
+            "Bioluminescence",
+            "Electrokinesis"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/3/30/SeashockerRoar.ogg/revision/latest?cb=20161228085338",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/a/a5/Capture_17.PNG/revision/latest?cb=20220521062915",
+        "stats": {
+            "attack": 18,
+            "speed": 16,
+            "armor": 20,
+            "firepower": 7,
+            "shotLimit": 12,
+            "venom": 14,
+            "jawStrength": 8,
+            "stealth": 10
+        }
+    },
+    {
+        "id": 38,
+        "species": "Sentinel",
+        "class": "Boulder",
+        "fireType": "Funeral pyre fire, Sonic screech",
+        "features": [
+            "Large body covered in tough rock-like epidermal layers and scutes",
+            "Rounded tail"
+        ],
+        "abilities": [
+            "Wing blasts",
+            "Remaining motionless for days at a time",
+            "Extremely developed senses except for sight",
+            "Hibernation"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/22/SentinelRoar.ogg/revision/latest?cb=20171225104204",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/0/07/Sentinelaa.png/revision/latest?cb=20170928231153",
+        "stats": {
+            "attack": 12,
+            "speed": 8,
+            "armor": 15,
+            "firepower": 6,
+            "shotLimit": 8,
+            "venom": 0,
+            "jawStrength": 10,
+            "stealth": 16
+        }
+    },
+    {
+        "id": 39,
+        "species": "Shellfire",
+        "class": "Tidal",
+        "fireType": "Cannonball-sized plasma charges",
+        "features": [
+            "Long but proportionately small wings",
+            "Long horns",
+            "Nasal horn",
+            "Hard carapace-like armor"
+        ],
+        "abilities": [
+            "Expelling red algae from gills",
+            "Swimming in great depths"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/b/bf/ShellfireRoar.ogg/revision/latest?cb=20171225070624",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/29/ShellFire_Render.png/revision/latest?cb=20180202072715",
+        "stats": {
+            "attack": 20,
+            "speed": 14,
+            "armor": 16,
+            "firepower": 22,
+            "shotLimit": 8,
+            "venom": 0,
+            "jawStrength": 15,
+            "stealth": 17
+        }
+    },
+    {
+        "id": 40,
+        "species": "Shovelhelm",
+        "class": "Boulder",
+        "fireType": "Brightly-colored fire",
+        "features": [
+            "Pointed chin",
+            "Head frill",
+            "Paddle-shaped tail",
+            "Stubby arms"
+        ],
+        "abilities": [
+            "Digging with chin",
+            "Hammering with head"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/1/1c/ShovelhelmRoar.ogg/revision/latest?cb=20161229042719",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/22/1481595797181.png/revision/latest?cb=20161213030401",
+        "stats": {
+            "attack": 10,
+            "speed": 5,
+            "armor": 20,
+            "firepower": 10,
+            "shotLimit": 6,
+            "venom": 8,
+            "jawStrength": 16,
+            "stealth": 8
+        }
+    },
+    {
+        "id": 41,
+        "species": "Singetail",
+        "class": "Stoker",
+        "fireType": "Scarlet flames",
+        "features": [
+            "Two sets of wings",
+            "Gills",
+            "Articulated eyes",
+            "Flat body",
+            "Three rows of spines along back"
+        ],
+        "abilities": [
+            "Eye Movement",
+            "Emitting fire from different body parts",
+            "Immunity to Sagefruit"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/a/a4/SingetailRoar.ogg/revision/latest?cb=20161228075050",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/3/32/Imagen1gh.png/revision/latest?cb=20170227204555",
+        "stats": {
+            "attack": 17,
+            "speed": 15,
+            "armor": 15,
+            "firepower": 20,
+            "shotLimit": 10,
+            "venom": 0,
+            "jawStrength": 4,
+            "stealth": 10
+        }
+    },
+    {
+        "id": 42,
+        "species": "Skrill",
+        "class": "Strike",
+        "fireType": "Lightning",
+        "features": [
+            "Sharp metallic spines on the back",
+            "Long wing claws",
+            "Spiked crown on the head",
+            "Beard-like spikes under the chin"
+        ],
+        "abilities": [
+            "Electrokinesis",
+            "Ice hibernation",
+            "Blending in with dark clouds",
+            "Riding lightning bolts to achieve supersonic speeds",
+            "Singing",
+            "Consumption and Immunity to Electric Eels"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/5f/SkrillRoar.ogg/revision/latest?cb=20161227161356",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/b/b2/Sfsdfsf.png/revision/latest?cb=20240616063637",
+        "stats": {
+            "attack": 14,
+            "speed": 19,
+            "armor": 10,
+            "firepower": 12,
+            "shotLimit": 4,
+            "venom": 0,
+            "jawStrength": 5,
+            "stealth": 18
+        }
+    },
+    {
+        "id": 43,
+        "species": "Slitherwing",
+        "class": "Mystery",
+        "fireType": "Venom spit",
+        "features": [
+            "Long snake-like body",
+            "Irregular spikes on the head",
+            "Small claws on wings"
+        ],
+        "abilities": [
+            "Spilling poison secreted from the skin",
+            "Extremely foldable wings",
+            "Immunity to a Death Song's amber and siren call"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/9/9e/SlitherwingRoar.ogg/revision/latest?cb=20200610072423",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/54/Slitherwing_-_transparent.png/revision/latest?cb=20170922045131",
+        "stats": {
+            "attack": 14,
+            "speed": 18,
+            "armor": 13,
+            "firepower": 0,
+            "shotLimit": 0,
+            "venom": 20,
+            "jawStrength": 8,
+            "stealth": 9
+        }
+    },
+    {
+        "id": 44,
+        "species": "Small Shadow Wing",
+        "class": "Stoker",
+        "fireType": "Explosive molten lava",
+        "features": [
+            "Row of triangular spines along the back",
+            "Four spines on tail tip",
+            "Rounded head and snout"
+        ],
+        "abilities": [
+            "Dive-bombing"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/6/6c/SmallShadowRoar.ogg/revision/latest?cb=20200610101614",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/21/Small_Shadow_Render.png/revision/latest?cb=20170309095222",
+        "stats": {
+            "attack": 25,
+            "speed": 14,
+            "armor": 15,
+            "firepower": 18,
+            "shotLimit": 60,
+            "venom": 0,
+            "jawStrength": 12,
+            "stealth": 4
+        }
+    },
+    {
+        "id": 45,
+        "species": "Smothering Smokebreath",
+        "class": "Mystery",
+        "fireType": "Smoke and extremely hot air, Welding torch-like fire",
+        "features": [
+            "Yellow eyes",
+            "Skull-like head",
+            "Smoke-like tail",
+            "Spines along back",
+            "Nasal horn flanked by two smaller ones"
+        ],
+        "abilities": [
+            "Creating a veil of smoke",
+            "Creating nests from metal"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/4/43/SmotheringSmokebreathRoar.ogg/revision/latest?cb=20161231061311",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/27/Extingue_Humo.png/revision/latest?cb=20161005205754",
+        "stats": {
+            "attack": 6,
+            "speed": 8,
+            "armor": 6,
+            "firepower": 6,
+            "shotLimit": 3,
+            "venom": 0,
+            "jawStrength": 8,
+            "stealth": 15
+        }
+    },
+    {
+        "id": 46,
+        "species": "Snafflefang",
+        "class": "Boulder",
+        "fireType": "Crystal-flecked fireballs",
+        "features": [
+            "Spiked tail bludgeon",
+            "Nasal horn",
+            "Diamond-sharp teeth"
+        ],
+        "abilities": [],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/a/ad/SnafflefangRoar.ogg/revision/latest?cb=20161229043842",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/f/f8/1481596725144.png/revision/latest?cb=20161213030527",
+        "stats": {
+            "attack": 9,
+            "speed": 5,
+            "armor": 17,
+            "firepower": 13,
+            "shotLimit": 6,
+            "venom": 12,
+            "jawStrength": 8,
+            "stealth": 8
+        }
+    },
+    {
+        "id": 47,
+        "species": "Snaptrapper",
+        "class": "Mystery",
+        "fireType": "Methane mist, Acid",
+        "features": [
+            "Four heads",
+            "Leaf-like spines",
+            "Triple split jaws",
+            "Antennae",
+            "Forked tail"
+        ],
+        "abilities": [
+            "Baits victim with a sweet smell",
+            "Emitting obnoxious odors"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/3/3e/SnapTrapperRoar.ogg/revision/latest?cb=20161231063124",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/e/ea/1482442286402.png/revision/latest?cb=20191218150427",
+        "stats": {
+            "attack": 10,
+            "speed": 4,
+            "armor": 4,
+            "firepower": 6,
+            "shotLimit": 4,
+            "venom": 18,
+            "jawStrength": 28,
+            "stealth": 60
+        }
+    },
+    {
+        "id": 48,
+        "species": "Snow Wraith",
+        "class": "Strike",
+        "fireType": "Frost fusillade",
+        "features": [
+            "Long ledge under chin",
+            "Spikes on tail",
+            "Bumpy tongue",
+            "Pair of large tusks",
+            "Long eyebrow-like appendages"
+        ],
+        "abilities": [
+            "Thermal vision",
+            "Adapted to blizzards",
+            "Blending in with the snow",
+            "Gripping sharp claws and tail spikes on ice",
+            "Burrowing through ice"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/7/7a/SnowWraithRoar.ogg/revision/latest?cb=20161227161011",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/1/13/1481265150027.png/revision/latest?cb=20161209063544",
+        "stats": {
+            "attack": 18,
+            "speed": 18,
+            "armor": 22,
+            "firepower": 24,
+            "shotLimit": 10,
+            "venom": 0,
+            "jawStrength": 8,
+            "stealth": 30
+        }
+    },
+    {
+        "id": 49,
+        "species": "Speed Stinger",
+        "class": "Sharp",
+        "fireType": "Acid blast",
+        "features": [
+            "Razor-sharp stinger",
+            "Sail fin on head",
+            "Small pair of wings on back",
+            "Theropod-like stature",
+            "Extendable webbed feet (Archipelago variant)",
+            "Red stripes and fins (Lead Stinger)"
+        ],
+        "abilities": [
+            "Paralyzing sting",
+            "Incredible night vision",
+            "Water running"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/8/85/SpeedStingerRoar.ogg/revision/latest?cb=20161229104952",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/f/f0/Speed_stinger_infobox.png/revision/latest?cb=20161213124514",
+        "stats": {
+            "attack": 12,
+            "speed": 30,
+            "armor": 10,
+            "firepower": 0,
+            "shotLimit": 0,
+            "venom": 15,
+            "jawStrength": 5,
+            "stealth": 30
+        }
+    },
+    {
+        "id": 50,
+        "species": "Stormcutter",
+        "class": "Sharp",
+        "fireType": "Sustained and blazing torus of fire",
+        "features": [
+            "Two pairs of wings",
+            "Head frills",
+            "\"Smashed\" face",
+            "Three tail fins",
+            "Hooked talons"
+        ],
+        "abilities": [
+            "Exceptional maneuverability and diving",
+            "Flying sideways",
+            "Twisting head about 180°",
+            "Flammable saliva"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/4/45/StormcutterRoar.ogg/revision/latest?cb=20161229105857",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/e/eb/1481742530411.png/revision/latest?cb=20180920171552",
+        "stats": {
+            "attack": 10,
+            "speed": 17,
+            "armor": 4,
+            "firepower": 12,
+            "shotLimit": 8,
+            "venom": 0,
+            "jawStrength": 5,
+            "stealth": 13
+        }
+    },
+    {
+        "id": 51,
+        "species": "Submaripper",
+        "class": "Tidal",
+        "fireType": "Harpoon-studded debris",
+        "features": [
+            "Webbed feet",
+            "Protrusions on the back",
+            "Long, sharp teeth",
+            "Large head-to-body ratio"
+        ],
+        "abilities": [
+            "Creating whirlpools and tidal waves",
+            "Gas bubbles"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/8/8e/SubmaripperRoar.ogg/revision/latest?cb=20171225102822",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/9/96/Submaripper_Render.png/revision/latest?cb=20170307233333",
+        "stats": {
+            "attack": 20,
+            "speed": 16,
+            "armor": 14,
+            "firepower": 0,
+            "shotLimit": 0,
+            "venom": 0,
+            "jawStrength": 30,
+            "stealth": 12
+        }
+    },
+    {
+        "id": 52,
+        "species": "Terrible Terror",
+        "class": "Stoker",
+        "fireType": "Propane fire",
+        "features": [
+            "Arrow-shaped tail tip",
+            "Small spines",
+            "Small horns",
+            "Large yellow eyes"
+        ],
+        "abilities": [
+            "Amazing accuracy",
+            "Singing"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/f/f7/TerribleTerrorRoar.ogg/revision/latest?cb=20161228074419",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/2c/1481530669268.png/revision/latest?cb=20200316132251",
+        "stats": {
+            "attack": 8,
+            "speed": 10,
+            "armor": 6,
+            "firepower": 12,
+            "shotLimit": 10,
+            "venom": 12,
+            "jawStrength": 2,
+            "stealth": 12
+        }
+    },
+    {
+        "id": 53,
+        "species": "Threadtail",
+        "class": "Stoker",
+        "fireType": "Green and orange flames, Purple mist",
+        "features": [
+            "Large crown-like head frill",
+            "Bumpy skin"
+        ],
+        "abilities": [
+            "Poisonous skin"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/28/ThreadtailRoar.ogg/revision/latest?cb=20161227163106",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/b/bd/Threadtail_-_NBG.png/revision/latest?cb=20161208162505",
+        "stats": {
+            "attack": 14,
+            "speed": 6,
+            "armor": 3,
+            "firepower": 10,
+            "shotLimit": 6,
+            "venom": 40,
+            "jawStrength": 2,
+            "stealth": 7
+        }
+    },
+    {
+        "id": 54,
+        "species": "Thunderclaw",
+        "class": "Tracker",
+        "fireType": "Green/orange fire",
+        "features": [
+            "Sail on back",
+            "Rounded nasal horn",
+            "Rounded ledge under chin"
+        ],
+        "abilities": [
+            "Tracking",
+            "Stampeding"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/6/6a/ThunderclawRoar.ogg/revision/latest?cb=20161231085501   ",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/9/90/Thunderclaw_Transparent.png/revision/latest?cb=20161214201124",
+        "stats": {
+            "attack": 14,
+            "speed": 16,
+            "armor": 16,
+            "firepower": 12,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 10,
+            "stealth": 6
+        }
+    },
+    {
+        "id": 55,
+        "species": "Thunderdrum",
+        "class": "Tidal",
+        "fireType": "Sonic blasts, Fire balls",
+        "features": [
+            "Expandable mouth",
+            "Small legs",
+            "Two pairs of wings",
+            "Nasal horn",
+            "Spines"
+        ],
+        "abilities": [
+            "Expelling air from body to swim",
+            "Immune to sonic attacks (nearly deaf)"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/4/4f/ThunderdrumRoar.ogg/revision/latest?cb=20161228092402",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/3/3a/Thunder-drum-how-to-train-your-dragon.png/revision/latest?cb=20220801132934",
+        "stats": {
+            "attack": 12,
+            "speed": 14,
+            "armor": 10,
+            "firepower": 16,
+            "shotLimit": 6,
+            "venom": 0,
+            "jawStrength": 7,
+            "stealth": 8
+        }
+    },
+    {
+        "id": 56,
+        "species": "Timberjack",
+        "class": "Sharp",
+        "fireType": "Oil-based fire",
+        "features": [
+            "Huge razor-sharp wings",
+            "No legs",
+            "Long and twisted horns",
+            "Slender body and neck",
+            "Tendrils under the chin"
+        ],
+        "abilities": [
+            "Wing slice",
+            "Fire nova attack",
+            "Using wings as shields"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/7/75/TImberjackRoar.ogg/revision/latest?cb=20161229110534",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/7/71/Timber.png/revision/latest?cb=20240616064029",
+        "stats": {
+            "attack": 10,
+            "speed": 12,
+            "armor": 8,
+            "firepower": 10,
+            "shotLimit": 8,
+            "venom": 0,
+            "jawStrength": 3,
+            "stealth": 13
+        }
+    },
+    {
+        "id": 57,
+        "species": "Triple Stryke",
+        "class": "Strike",
+        "fireType": "Continuous streams of highly concentrated orange flames",
+        "features": [
+            "Three tails that tie together to form one",
+            "Two ear-like appendages on head",
+            "Large pincers as forearms",
+            "Defensive plates"
+        ],
+        "abilities": [
+            "Unique venom in each stinger",
+            "Defense roll",
+            "Prehensile tail"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/7/7c/TripleStrykeRoar.ogg/revision/latest?cb=20161227162100",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/2d/Triple_Ataque.png/revision/latest?cb=20161005210404",
+        "stats": {
+            "attack": 15,
+            "speed": 20,
+            "armor": 18,
+            "firepower": 14,
+            "shotLimit": 6,
+            "venom": 10,
+            "jawStrength": 6,
+            "stealth": 18
+        }
+    },
+    {
+        "id": 58,
+        "species": "Typhoomerang",
+        "class": "Stoker",
+        "fireType": "Cyclonic jets of flame",
+        "features": [
+            "Large wings",
+            "Pair of smooth horns",
+            "Spines along the back",
+            "Long razor sharp talons"
+        ],
+        "abilities": [
+            "Flaming cyclone",
+            "Flaming corkscrew lunge",
+            "Immunity to Eel Pox",
+            "Sparkle Shower",
+            "Promoting flower growth after cyclones",
+            "Eating eels to increase shot limit"
+        ],
+        "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/d/d7/TyphoomerangRoar.ogg/revision/latest?cb=20161228073244",
+        "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/9/95/1481264040302.png/revision/latest?cb=20161209073039",
+        "stats": {
+            "attack": 14,
+            "speed": 20,
+            "armor": 12,
+            "firepower": 17,
+            "shotLimit": 10,
+            "venom": 0,
+            "jawStrength": 6,
+            "stealth": 6
+        }
+    },
+    {
+    "id": 59,
+    "species": "Whispering Death",
+    "class": "Boulder",
+    "fireType": "Concentric rings of fire",
+    "features": [
+        "Large head with rotating teeth",
+        "Sharp spines",
+        "White bulging eyes"
+    ],
+    "abilities": [
+        "Tunneling",
+        "Spine shot",
+        "Rotating teeth",
+        "Vacuum effect",
+        "Immunity to dragon nip"
+    ],
+    "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/b/b4/WhisperingDeathRoar.ogg/revision/latest?cb=20161229065747",
+    "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/c/c3/Sdsd.png/revision/latest?cb=20190917174314",
+    "stats": {
+        "attack": 8,
+        "speed": 7,
+        "armor": 7,
+        "firepower": 3,
+        "shotLimit": 1,
+        "venom": 2,
+        "jawStrength": 4,
+        "stealth": 10
     }
+},
+{
+    "id": 60,
+    "species": "Windgnasher",
+    "class": "Tracker",
+    "fireType": "Green or Orange Fireballs, Icy blasts",
+    "features": [
+        "Bumps all over body",
+        "Crowned head",
+        "Mace-like tail bludgeon",
+        "Humped back"
+    ],
+    "abilities": [
+        "Tracking"
+    ],
+    "roar": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/6/6c/WindgnasherRoar.ogg/revision/latest?cb=20161231085834",
+    "image": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/e/e8/World_of_dragons_windgnasher.png/revision/latest?cb=20250209045545",
+    "stats": {
+        "attack": 14,
+        "speed": 16,
+        "armor": 18,
+        "firepower": 9,
+        "shotLimit": 16,
+        "venom": 0,
+        "jawStrength": 18,
+        "stealth": 10
+    }
+}
 ]

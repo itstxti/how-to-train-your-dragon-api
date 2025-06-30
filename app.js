@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const dragones = require('./data/dragones.json');
+const clases = require('./data/class.json');
 const cors = require('cors'); // Añade esta línea
 
 app.use(cors());
@@ -12,7 +13,8 @@ app.get('/', (req, res) => {
     endpoints: {
       todosLosDragones: "/dragones",
       dragonAleatorio: "/dragones/random",
-      dragonPorId: "/dragones/:id"
+      dragonPorId: "/dragones/:id",
+      class: "/class"
     }
   });
 });
@@ -30,6 +32,10 @@ app.get('/dragones/:id', (req, res) => {
   const quote = dragones.find(q => q.id === parseInt(req.params.id));
   if (!quote) return res.status(404).send('Quote not found');
   res.json(quote);
+});
+
+app.get('/class', (req, res) => {
+  res.json(clases);
 });
 
 const PORT = 3000;

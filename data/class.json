@@ -1,0 +1,38 @@
+[
+    {
+        "class": "Mystery",
+        "icon": "https://i.ibb.co/dLCGS9S/class-Mystery.png",
+        "description": "Little is known about the Mystery Class dragons, due to their stealthy and sneaky nature. Dragons in this class are generally more feared than those in other classes. This Class tends to include the most diverse and interesting range of dragons out of all, most of which exhibit extremely rare and unique traits."
+    },
+    {
+        "class": "Boulder",
+        "icon": "https://i.ibb.co/5xzQDXx/class-Boulder.png",
+        "description": "Boulder Class dragons are tough and associated with the earth. They can eat rocks, which many of them melt within their stomachs and regurgitate as lava blasts. Although they have small wings compared to their body size, they are able to fly as fast and as high as most other dragons can. According to Fishlegs in Rise of Berk, Boulder Class dragons aren't picky eaters."
+    },
+    {
+        "class": "Sharp",
+        "icon": "https://i.ibb.co/tQKvgRJ/class-Sharp.png",
+        "description": "Sharp Class dragons are vain and prideful, and all of them possess sharp body parts. Most of these dragons can fire extremely sharp and poisonous projectiles from their bodies, which can quickly be regenerated. Sharp class dragons adore being stroked and generally made a fuss of. They especially love being complimented, due to their nature."
+    },
+    {
+        "class": "Stoker",
+        "icon": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/0/04/Stoker_Class.png/revision/latest?cb=20200630135359",
+        "description": "Stoker Class dragons are hot-headed fire breathers. A notable characteristic of these dragons is their high shot limit and firepower. Some of them are capable of setting themselves, or a part of their body on fire. When Stoker Class dragons become sick or exhausted, they might loose their ability to produce flames. This state can be fatal, although a Fireworm Queen's venom or Firecomb can reignite their inner flame."
+    },
+    {
+        "class": "Strike",
+        "icon": "https://i.ibb.co/tJxggf1/class-Strike.png",
+        "description": "Strike Class dragons are characterized by their extreme speed, high jaw strength, and superior intelligence. Some members of this Class possess pinpoint accuracy and unique abilities that allow them to navigate in their respective environment/atmosphere."
+    },
+    {
+        "class": "Tidal",
+        "icon": "https://i.ibb.co/YNgQC44/class-Tidal.png",
+        "description": "Almost all Tidal Class dragons live in ocean, although some of them have amphibian biology allowing them to survive on land. Few of these dragons are cable of creating flames, but many can generate electricity. Dragons of this class are generally larger than those of other classes. Despite this, they are usually very peaceful ocean dwellers who prefer to be left alone and when trained, are exceedingly loyal. According to Hiccup, Tidal Class dragons don't react well to signs of aggression."
+    },
+    {
+        "class": "Tracker",
+        "icon": "https://i.ibb.co/xDyXV99/class-Tracker.png",
+        "description": "The Tracker Class is the newest class of dragons, discovered during the events of Race to the Edge. Natural born hunters, Tracker Class dragons have a highly acute sense of smell and taste that enables them to effortlessly track down and find anything."
+    }
+
+]
