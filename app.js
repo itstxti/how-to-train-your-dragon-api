@@ -215,7 +215,7 @@ app.get('/', (req, res) => {
       }
       
       .description::before {
-        content: "•";
+        
         position: absolute;
         left: 0;
         color: var(--accent);
