@@ -232,8 +232,6 @@ app.get('/', (req, res) => {
       .dragon-image {
         width: 60px;
         height: 60px;
-        border-radius: 8px;
-        object-fit: cover;
         border: 2px solid var(--accent);
       }
       
