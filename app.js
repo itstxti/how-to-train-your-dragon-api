@@ -11,8 +11,8 @@ app.get('/', (req, res) => {
   const serverTime = new Date().toLocaleString('en-US');
   const dragonCount = dragones.length;
   const classCount = clases.length;
-  
-  
+
+
   const html = `
   <!DOCTYPE html>
   <html lang="en">
@@ -240,6 +240,10 @@ app.get('/', (req, res) => {
         gap: 10px;
         color: var(--text-light);
       }
+
+      .api-status-container {
+        text-align: center; /* Centrado horizontal */
+      }
       
       .api-status {
         display: inline-flex;
@@ -369,11 +373,13 @@ app.get('/', (req, res) => {
       </div>
       
       <footer>
-        <div class="api-status">
-          <span class="status-dot"></span>
-          <span>Status: Operational</span>
+        <div class="api-status-container">
+          <div class="api-status">
+            <span class="status-dot"></span>
+            <span>Status: Operational</span>
+          </div>
         </div>
-        <p>🕒 Server Time: ${serverTime}</p>
+        <p>Server Time: ${serverTime}</p>
         <p>API Version: 1.0.0 | Dragon Database Updated: 2025-06-15</p>
         <p>© 2025 Berk Dragon Archives - All rights reserved</p>
       </footer>
@@ -400,7 +406,7 @@ app.get('/', (req, res) => {
   </body>
   </html>
   `;
-  
+
   res.send(html);
 });
 
@@ -425,13 +431,13 @@ app.get('/class', (req, res) => {
 
 app.get('/class/:nombre', (req, res) => {
   const nombreClase = req.params.nombre;
-  
+
   // Buscar la clase ignorando mayúsculas/minúsculas y espacios
-  const clase = clases.find(c => 
-    c.class.toLowerCase().replace(/\s+/g, '') === 
+  const clase = clases.find(c =>
+    c.class.toLowerCase().replace(/\s+/g, '') ===
     nombreClase.toLowerCase().replace(/\s+/g, '')
   );
-  
+
   if (!clase) {
     return res.status(404).json({
       error: 'Clase no encontrada',
@@ -439,7 +445,7 @@ app.get('/class/:nombre', (req, res) => {
       clasesDisponibles: clases.map(c => c.class)
     });
   }
-  
+
   // Devolver solo el objeto de clase sin modificaciones
   res.json(clase);
 });
