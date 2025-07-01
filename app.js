@@ -255,7 +255,7 @@ app.get('/', (req, res) => {
         <div class="endpoint-card card" style="animation-delay: 0.4s">
           <div>
             <span class="method">GET</span>
-            <span class="path">/clases</span>
+            <span class="path">/class</span>
           </div>
           <p class="description">Obtiene todas las clases de dragones disponibles.</p>
         </div>
@@ -263,13 +263,13 @@ app.get('/', (req, res) => {
         <div class="endpoint-card card" style="animation-delay: 0.5s">
           <div>
             <span class="method">GET</span>
-            <span class="path">/clases/:nombre</span>
+            <span class="path">/class/:nombre</span>
           </div>
           <p class="description">Obtiene información detallada sobre una clase específica y sus dragones asociados.</p>
           <div class="params">
             <div class="param-item">
               <span class="param-name">Ejemplo</span>
-              <span><a href="/clases/Mystery" style="color: var(--highlight);">/clases/Mystery</a></span>
+              <span><a href="/class/Mystery" style="color: var(--highlight);">/clases/Mystery</a></span>
             </div>
           </div>
         </div>
