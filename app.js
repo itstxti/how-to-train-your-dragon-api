@@ -12,34 +12,7 @@ app.get('/', (req, res) => {
   const dragonCount = dragones.length;
   const classCount = clases.length;
   
-  // Get 3 random dragons to showcase
-  const randomDragons = [];
-  const usedIndices = new Set();
-  while (randomDragons.length < 3 && randomDragons.length < dragones.length) {
-    const randomIndex = Math.floor(Math.random() * dragones.length);
-    if (!usedIndices.has(randomIndex)) {
-      usedIndices.add(randomIndex);
-      const dragon = dragones[randomIndex];
-      randomDragons.push({
-        id: dragon.id,
-        species: dragon.species,
-        class: dragon.class,
-        image: dragon.image,
-        stats: dragon.stats
-      });
-    }
-  }
-
-  // Get 3 random classes to showcase
-  const randomClasses = [];
-  while (randomClasses.length < 3 && randomClasses.length < clases.length) {
-    const randomIndex = Math.floor(Math.random() * clases.length);
-    if (!randomClasses.some(c => c.class === clases[randomIndex].class)) {
-      randomClasses.push(clases[randomIndex]);
-    }
-  }
-
-  // Generate HTTYD-themed HTML
+  // Generate HTTYD-themed HTML without examples
   const html = `
   <!DOCTYPE html>
   <html lang="en">
@@ -185,90 +158,6 @@ app.get('/', (req, res) => {
         color: var(--accent);
       }
       
-      .examples-section {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        margin-bottom: 3rem;
-      }
-      
-      .example-card {
-        background: var(--card-bg);
-        border-radius: 12px;
-        padding: 1.5rem;
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-      
-      .example-card h3 {
-        margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 1px solid var(--accent);
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: var(--highlight-light);
-      }
-      
-      .dragon-item {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        padding: 10px;
-        margin-bottom: 10px;
-        background: rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
-        transition: transform 0.2s ease;
-        text-decoration: none;
-        color: var(--text);
-      }
-      
-      .dragon-item:hover {
-        transform: translateX(5px);
-        background: rgba(69, 123, 157, 0.3);
-        border-left: 3px solid var(--accent);
-      }
-      
-      .dragon-image {
-        width: 60px;
-        height: 60px;
-        border: 2px solid var(--accent);
-      }
-      
-      .dragon-info h4 {
-        color: var(--accent-light);
-      }
-      
-      .dragon-info p {
-        font-size: 0.9rem;
-        color: var(--text-light);
-      }
-      
-      .class-item {
-        padding: 12px;
-        margin-bottom: 10px;
-        background: rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        text-decoration: none;
-        color: var(--text);
-      }
-      
-      .class-item:hover {
-        background: rgba(69, 123, 157, 0.3);
-        border-left: 3px solid var(--accent);
-      }
-      
-      .class-icon {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid var(--highlight);
-      }
-      
       .endpoints-section {
         margin-bottom: 3rem;
       }
@@ -326,6 +215,7 @@ app.get('/', (req, res) => {
       }
       
       .description::before {
+        content: "•";
         position: absolute;
         left: 0;
         color: var(--accent);
@@ -433,32 +323,14 @@ app.get('/', (req, res) => {
           <p>Dragon Classes</p>
         </div>
         
-      </div>
-      
-      <div class="examples-section">
-        <div class="example-card card" style="animation-delay: 0.2s">
-          <h3><i class="fas fa-dragon"></i> Featured Dragons</h3>
-          ${randomDragons.map(dragon => `
-            <a href="/dragones/${dragon.id}" class="dragon-item">
-              <img src="${dragon.image}" alt="${dragon.species}" class="dragon-image">
-              <div class="dragon-info">
-                <h4>${dragon.species}</h4>
-                <p>${dragon.class} | Attack: ${dragon.stats.attack}</p>
-              </div>
-            </a>
-          `).join('')}
+        <div class="stat-card card" style="animation-delay: 0.3s">
+          <h3>${Math.max(...dragones.map(d => d.stats.attack))}</h3>
+          <p>Max Attack</p>
         </div>
         
-        <div class="example-card card" style="animation-delay: 0.3s">
-          <h3><i class="fas fa-layer-group"></i> Dragon Classes</h3>
-          ${randomClasses.map(clase => `
-            <a href="/class/${clase.class}" class="class-item">
-              <img src="${clase.icon}" alt="${clase.class}" class="class-icon">
-              <div>
-                <h4>${clase.class}</h4>
-              </div>
-            </a>
-          `).join('')}
+        <div class="stat-card card" style="animation-delay: 0.4s">
+          <h3>${Math.max(...dragones.map(d => d.stats.speed))}</h3>
+          <p>Max Speed</p>
         </div>
       </div>
       
@@ -548,16 +420,6 @@ app.get('/', (req, res) => {
       }
       
       setInterval(updateServerTime, 1000);
-      
-      // Smooth scroll effect
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
     </script>
   </body>
   </html>
