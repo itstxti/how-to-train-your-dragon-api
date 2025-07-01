@@ -110,13 +110,7 @@ app.get('/', (req, res) => {
 ;
       }
       
-      .subtitle {
-        font-size: 1.2rem;
-        opacity: 0.8;
-        max-width: 800px;
-        margin: 0 auto;
-        color: var(--text-light);
-      }
+      
       
       .stats-grid {
         display: grid;
