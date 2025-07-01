@@ -106,7 +106,8 @@ app.get('/', (req, res) => {
         transform: translateX(-50%);
         width: 80%;
         height: 3px;
-        background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        background: #e63946;
+;
       }
       
       .subtitle {
