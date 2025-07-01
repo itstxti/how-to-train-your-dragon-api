@@ -323,6 +323,15 @@ app.get('/', (req, res) => {
           <p>Dragon Classes</p>
         </div>
         
+        <div class="stat-card card" style="animation-delay: 0.3s">
+          <h3>${Math.max(...dragones.map(d => d.stats.attack))}</h3>
+          <p>Max Attack</p>
+        </div>
+        
+        <div class="stat-card card" style="animation-delay: 0.4s">
+          <h3>${Math.max(...dragones.map(d => d.stats.speed))}</h3>
+          <p>Max Speed</p>
+        </div>
       </div>
       
       <div class="endpoints-section">
