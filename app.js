@@ -45,7 +45,7 @@ app.get('/', (req, res) => {
       }
       
       body {
-        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        background: #0a1128;
         color: var(--text);
         line-height: 1.6;
         min-height: 100vh;
@@ -89,7 +89,7 @@ app.get('/', (req, res) => {
       h1 {
         font-size: 2.5rem;
         margin-bottom: 0.5rem;
-        background: linear-gradient(45deg, var(--accent), var(--highlight-light));
+        background: #e63946;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         position: relative;
