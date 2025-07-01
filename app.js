@@ -217,15 +217,6 @@ app.get('/', (req, res) => {
           <p>Clases diferentes</p>
         </div>
         
-        <div class="stat-card card" style="animation-delay: 0.3s">
-          <h3>${Math.max(...dragones.map(d => d.stats.attack))}</h3>
-          <p>Máximo ataque</p>
-        </div>
-        
-        <div class="stat-card card" style="animation-delay: 0.4s">
-          <h3>${Math.max(...dragones.map(d => d.stats.speed))}</h3>
-          <p>Máxima velocidad</p>
-        </div>
       </div>
       
       <div class="endpoints-section">
@@ -236,7 +227,7 @@ app.get('/', (req, res) => {
             <span class="method">GET</span>
             <span class="path">/dragones</span>
           </div>
-          <p class="description">Obtiene una lista paginada de todos los dragones disponibles.</p>
+          <p class="description">Obtiene todos los dragones disponibles.</p>
         </div>
         
         <div class="endpoint-card card" style="animation-delay: 0.2s">
