@@ -308,7 +308,6 @@ app.get('/', (req, res) => {
       <header>
         <div class="logo">🐉</div>
         <h1>How to Train Your Dragon API</h1>
-        <p class="subtitle">Explore the dragon world of Berk through our API. Discover dragon species, classes, abilities, and stats from the HTTYD universe.</p>
       </header>
       
       <div class="stats-grid">
