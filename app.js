@@ -79,12 +79,7 @@ app.get('/', (req, res) => {
         position: relative;
       }
       
-      .logo {
-        font-size: 4rem;
-        margin-bottom: 1rem;
-        text-shadow: 0 0 15px rgba(229, 57, 70, 0.5);
-        animation: pulse 2s infinite;
-      }
+    
       
       h1 {
         font-size: 2.5rem;
@@ -283,9 +278,7 @@ app.get('/', (req, res) => {
           padding: 1rem;
         }
         
-        .logo {
-          font-size: 3rem;
-        }
+        
         
         h1 {
           font-size: 2rem;
@@ -300,7 +293,6 @@ app.get('/', (req, res) => {
   <body>
     <div class="container">
       <header>
-        <div class="logo">🐉</div>
         <h1>How to Train Your Dragon API</h1>
       </header>
       
