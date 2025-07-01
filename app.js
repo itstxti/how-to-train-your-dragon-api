@@ -4,16 +4,9 @@ const dragones = require('./data/dragones.json');
 const clases = require('./data/class.json');
 const cors = require('cors'); // Añade esta línea
 
-
-// Middlewares
 app.use(cors());
-app.use(express.json());
 
-// Cache para mejorar rendimiento
-const dragonCache = new Map();
-dragones.forEach(dragon => dragonCache.set(dragon.id, dragon));
-
-// Endpoint raíz 
+// Agrega esto antes de los otros endpoints
 app.get('/', (req, res) => {
   const serverTime = new Date().toLocaleString();
   const dragonCount = dragones.length;
@@ -244,20 +237,6 @@ app.get('/', (req, res) => {
             <span class="path">/dragones</span>
           </div>
           <p class="description">Obtiene una lista paginada de todos los dragones disponibles.</p>
-          <div class="params">
-            <div class="param-item">
-              <span class="param-name">page</span>
-              <span>Número de página (default: 1)</span>
-            </div>
-            <div class="param-item">
-              <span class="param-name">limit</span>
-              <span>Resultados por página (default: 10)</span>
-            </div>
-            <div class="param-item">
-              <span class="param-name">clase</span>
-              <span>Filtrar por clase (ej: 'Mystery')</span>
-            </div>
-          </div>
         </div>
         
         <div class="endpoint-card card" style="animation-delay: 0.2s">
@@ -318,125 +297,47 @@ app.get('/', (req, res) => {
   res.send(html);
 });
 
-// Endpoint para dragones con filtros 
 app.get('/dragones', (req, res) => {
-  const { page = 1, limit = 10, clase, caracteristica } = req.query;
-  let resultados = [...dragones];
-
-  // Filtros
-  if (clase) resultados = resultados.filter(d => d.class === clase);
-  if (caracteristica) {
-    resultados = resultados.filter(d => 
-      d.features.some(f => f.toLowerCase().includes(caracteristica.toLowerCase()))
-    );
-  }
-
-  // Paginación
-  const startIndex = (page - 1) * limit;
-  const endIndex = page * limit;
-  const paginados = resultados.slice(startIndex, endIndex);
-
-  res.json({
-    total: resultados.length,
-    pagina: parseInt(page),
-    resultadosPorPagina: parseInt(limit),
-    totalPaginas: Math.ceil(resultados.length / limit),
-    data: paginados
-  });
+  res.json(dragones);
 });
 
-// Endpoint para dragón aleatorio
 app.get('/dragones/random', (req, res) => {
-  const randomIndex = Math.floor(Math.random() * dragones.length);
-  res.json(dragones[randomIndex]);
+  const randomQuote = dragones[Math.floor(Math.random() * dragones.length)];
+  res.json(randomQuote);
 });
 
-// Endpoint para dragón por ID 
 app.get('/dragones/:id', (req, res) => {
-  const id = parseInt(req.params.id);
-  
-  if (isNaN(id)) {
-    return res.status(400).json({
-      error: 'ID inválido',
-      message: 'El ID debe ser un número'
-    });
-  }
-
-  const dragon = dragonCache.get(id);
-  
-  if (!dragon) {
-    return res.status(404).json({
-      error: 'Dragón no encontrado',
-      message: `No existe un dragón con ID ${id}`,
-      sugerencia: `IDs válidos entre 1 y ${dragones.length}`
-    });
-  }
-  
-  // Buscar información completa de la clase
-  const claseCompleta = clases.find(c => c.class === dragon.class);
-  res.json({ ...dragon, claseInfo: claseCompleta });
+  const quote = dragones.find(q => q.id === parseInt(req.params.id));
+  if (!quote) return res.status(404).send('Quote not found');
+  res.json(quote);
 });
 
-// Endpoint para todas las clases
-app.get('/clases', (req, res) => {
+app.get('/class', (req, res) => {
   res.json(clases);
 });
 
-// Nuevo endpoint: Clase por nombre
-app.get('/clases/:nombre', (req, res) => {
+app.get('/class/:nombre', (req, res) => {
   const nombreClase = req.params.nombre;
-  const clase = clases.find(c => c.class.toLowerCase() === nombreClase.toLowerCase());
+  
+  // Buscar la clase ignorando mayúsculas/minúsculas y espacios
+  const clase = clases.find(c => 
+    c.class.toLowerCase().replace(/\s+/g, '') === 
+    nombreClase.toLowerCase().replace(/\s+/g, '')
+  );
   
   if (!clase) {
     return res.status(404).json({
       error: 'Clase no encontrada',
+      message: `La clase '${nombreClase}' no existe en nuestro bestiario`,
       clasesDisponibles: clases.map(c => c.class)
     });
   }
   
-  // Obtener dragones de esta clase
-  const dragonesClase = dragones.filter(d => d.class === clase.class);
-  
-  res.json({
-    ...clase,
-    totalDragones: dragonesClase.length,
-    dragonesEjemplo: dragonesClase.slice(0, 3).map(d => ({
-      id: d.id,
-      species: d.species,
-      image: d.image
-    }))
-  });
+  // Devolver solo el objeto de clase sin modificaciones
+  res.json(clase);
 });
 
-// Middleware para rutas no encontradas
-app.use((req, res) => {
-  res.status(404).json({
-    error: 'Ruta no encontrada',
-    message: `La ruta ${req.path} no existe`,
-    acciones: [
-      'Verifica la URL',
-      'Consulta / para ver los endpoints disponibles'
-    ]
-  });
-});
-
-// Middleware para manejo de errores
-app.use((err, req, res, next) => {
-  console.error('Error en el servidor:', err.stack);
-  res.status(500).json({
-    error: 'Error interno del servidor',
-    message: 'Los dragones han causado un problema inesperado'
-  });
-});
-
-// Configuración del puerto
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 app.listen(PORT, () => {
-  console.log(`
-  API de Dragones iniciada!
-  http://localhost:${PORT}
-  Total dragones: ${dragones.length}
-  Total clases: ${clases.length}
-  Cache inicializada para ${dragonCache.size} dragones
-  `);
+  console.log(`API running at http://localhost:${PORT}`);
 });
