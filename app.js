@@ -8,11 +8,11 @@ app.use(cors());
 
 // Agrega esto antes de los otros endpoints
 app.get('/', (req, res) => {
-  const serverTime = new Date().toLocaleString();
+  const serverTime = new Date().toLocaleString('en-US');
   const dragonCount = dragones.length;
   const classCount = clases.length;
   
-  // Obtener 3 dragones aleatorios para mostrar
+  // Get 3 random dragons to showcase
   const randomDragons = [];
   const usedIndices = new Set();
   while (randomDragons.length < 3 && randomDragons.length < dragones.length) {
@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
     }
   }
 
-  // Obtener 3 clases aleatorias para mostrar
+  // Get 3 random classes to showcase
   const randomClasses = [];
   while (randomClasses.length < 3 && randomClasses.length < clases.length) {
     const randomIndex = Math.floor(Math.random() * clases.length);
@@ -39,14 +39,14 @@ app.get('/', (req, res) => {
     }
   }
 
-  // Generar HTML con estilo profesional
+  // Generate HTTYD-themed HTML
   const html = `
   <!DOCTYPE html>
-  <html lang="es">
+  <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API de Dragones | Documentación</title>
+    <title>HTTYD Dragon API | Documentation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
       * {
@@ -57,18 +57,18 @@ app.get('/', (req, res) => {
       }
       
       :root {
-        --primary: #0f1a2a;
-        --secondary: #1a2b3c;
-        --accent: #ff6b35;
-        --accent-light: #ff8c5a;
-        --text: #f0f0f0;
-        --text-light: #c0c0c0;
-        --highlight: #4facfe;
-        --highlight-light: #6bc0ff;
-        --card-bg: rgba(30, 41, 59, 0.7);
-        --success: #4caf50;
-        --warning: #ff9800;
-        --danger: #f44336;
+        --primary: #0a1128;
+        --secondary: #1c3144;
+        --accent: #e63946;
+        --accent-light: #ff6b6b;
+        --text: #f1faee;
+        --text-light: #a8dadc;
+        --highlight: #457b9d;
+        --highlight-light: #a8dadc;
+        --card-bg: rgba(28, 49, 68, 0.7);
+        --success: #2a9d8f;
+        --warning: #e9c46a;
+        --danger: #e76f51;
       }
       
       body {
@@ -88,7 +88,7 @@ app.get('/', (req, res) => {
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url('https://www.transparenttextures.com/patterns/dragon-scales.png');
+        background-image: url('https://www.transparenttextures.com/patterns/black-scales.png');
         opacity: 0.1;
         z-index: -1;
       }
@@ -109,18 +109,20 @@ app.get('/', (req, res) => {
       .logo {
         font-size: 4rem;
         margin-bottom: 1rem;
-        text-shadow: 0 0 15px rgba(255, 107, 53, 0.5);
+        text-shadow: 0 0 15px rgba(229, 57, 70, 0.5);
         animation: pulse 2s infinite;
       }
       
       h1 {
         font-size: 2.5rem;
         margin-bottom: 0.5rem;
-        background: linear-gradient(45deg, var(--accent), var(--highlight));
+        background: linear-gradient(45deg, var(--accent), var(--highlight-light));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         position: relative;
         display: inline-block;
+        font-weight: 800;
+        letter-spacing: 1px;
       }
       
       h1::after {
@@ -139,6 +141,7 @@ app.get('/', (req, res) => {
         opacity: 0.8;
         max-width: 800px;
         margin: 0 auto;
+        color: var(--text-light);
       }
       
       .stats-grid {
@@ -204,6 +207,7 @@ app.get('/', (req, res) => {
         display: flex;
         align-items: center;
         gap: 10px;
+        color: var(--highlight-light);
       }
       
       .dragon-item {
@@ -215,11 +219,14 @@ app.get('/', (req, res) => {
         background: rgba(0, 0, 0, 0.2);
         border-radius: 8px;
         transition: transform 0.2s ease;
+        text-decoration: none;
+        color: var(--text);
       }
       
       .dragon-item:hover {
         transform: translateX(5px);
-        background: rgba(79, 172, 254, 0.1);
+        background: rgba(69, 123, 157, 0.3);
+        border-left: 3px solid var(--accent);
       }
       
       .dragon-image {
@@ -247,6 +254,13 @@ app.get('/', (req, res) => {
         display: flex;
         align-items: center;
         gap: 15px;
+        text-decoration: none;
+        color: var(--text);
+      }
+      
+      .class-item:hover {
+        background: rgba(69, 123, 157, 0.3);
+        border-left: 3px solid var(--accent);
       }
       
       .class-icon {
@@ -267,6 +281,7 @@ app.get('/', (req, res) => {
         padding-bottom: 0.5rem;
         border-bottom: 2px solid var(--accent);
         display: inline-block;
+        color: var(--highlight-light);
       }
       
       .endpoint-grid {
@@ -286,7 +301,7 @@ app.get('/', (req, res) => {
       
       .endpoint-card:hover {
         border-color: var(--accent);
-        box-shadow: 0 5px 15px rgba(255, 107, 53, 0.2);
+        box-shadow: 0 5px 15px rgba(229, 57, 70, 0.2);
       }
       
       .method {
@@ -296,19 +311,20 @@ app.get('/', (req, res) => {
         font-weight: bold;
         margin-right: 1rem;
         background: var(--highlight);
-        color: var(--primary);
+        color: var(--text);
       }
       
       .path {
         font-family: monospace;
         font-size: 1.1rem;
-        color: var(--accent);
+        color: var(--accent-light);
       }
       
       .description {
         margin: 1rem 0;
         padding-left: 2rem;
         position: relative;
+        color: var(--text-light);
       }
       
       .description::before {
@@ -334,7 +350,7 @@ app.get('/', (req, res) => {
       .param-name {
         font-weight: bold;
         min-width: 120px;
-        color: var(--accent);
+        color: var(--accent-light);
       }
       
       footer {
@@ -347,13 +363,14 @@ app.get('/', (req, res) => {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        color: var(--text-light);
       }
       
       .api-status {
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        background: rgba(76, 175, 80, 0.2);
+        background: rgba(42, 157, 143, 0.2);
         padding: 5px 15px;
         border-radius: 20px;
       }
@@ -404,48 +421,39 @@ app.get('/', (req, res) => {
     <div class="container">
       <header>
         <div class="logo">🐉</div>
-        <h1>API de Dragones</h1>
-        <p class="subtitle">Explora el mundo mágico de dragones a través de nuestra API. Descubre especies, clases, habilidades y estadísticas.</p>
+        <h1>How to Train Your Dragon API</h1>
+        <p class="subtitle">Explore the dragon world of Berk through our API. Discover dragon species, classes, abilities, and stats from the HTTYD universe.</p>
       </header>
       
       <div class="stats-grid">
         <div class="stat-card card" style="animation-delay: 0.1s">
           <h3>${dragonCount}</h3>
-          <p>Dragones registrados</p>
+          <p>Registered Dragons</p>
         </div>
         
         <div class="stat-card card" style="animation-delay: 0.2s">
           <h3>${classCount}</h3>
-          <p>Clases diferentes</p>
+          <p>Dragon Classes</p>
         </div>
         
-        <div class="stat-card card" style="animation-delay: 0.3s">
-          <h3>${Math.max(...dragones.map(d => d.stats.attack))}</h3>
-          <p>Máximo ataque</p>
-        </div>
-        
-        <div class="stat-card card" style="animation-delay: 0.4s">
-          <h3>${Math.max(...dragones.map(d => d.stats.speed))}</h3>
-          <p>Máxima velocidad</p>
-        </div>
       </div>
       
       <div class="examples-section">
         <div class="example-card card" style="animation-delay: 0.2s">
-          <h3><i class="fas fa-dragon"></i> Dragones de ejemplo</h3>
+          <h3><i class="fas fa-dragon"></i> Featured Dragons</h3>
           ${randomDragons.map(dragon => `
             <a href="/dragones/${dragon.id}" class="dragon-item">
               <img src="${dragon.image}" alt="${dragon.species}" class="dragon-image">
               <div class="dragon-info">
                 <h4>${dragon.species}</h4>
-                <p>${dragon.class} | Ataque: ${dragon.stats.attack}</p>
+                <p>${dragon.class} | Attack: ${dragon.stats.attack}</p>
               </div>
             </a>
           `).join('')}
         </div>
         
         <div class="example-card card" style="animation-delay: 0.3s">
-          <h3><i class="fas fa-layer-group"></i> Clases de ejemplo</h3>
+          <h3><i class="fas fa-layer-group"></i> Dragon Classes</h3>
           ${randomClasses.map(clase => `
             <a href="/class/${clase.class}" class="class-item">
               <img src="${clase.icon}" alt="${clase.class}" class="class-icon">
@@ -458,7 +466,7 @@ app.get('/', (req, res) => {
       </div>
       
       <div class="endpoints-section">
-        <h2 class="section-title"><i class="fas fa-plug"></i> Endpoints Disponibles</h2>
+        <h2 class="section-title"><i class="fas fa-plug"></i> API Endpoints</h2>
         
         <div class="endpoint-grid">
           <div class="endpoint-card card" style="animation-delay: 0.1s">
@@ -466,7 +474,7 @@ app.get('/', (req, res) => {
               <span class="method">GET</span>
               <span class="path">/dragones</span>
             </div>
-            <p class="description">Obtiene todos los dragones disponibles.</p>
+            <p class="description">Get all dragons in the HTTYD universe</p>
           </div>
           
           <div class="endpoint-card card" style="animation-delay: 0.2s">
@@ -474,7 +482,7 @@ app.get('/', (req, res) => {
               <span class="method">GET</span>
               <span class="path">/dragones/random</span>
             </div>
-            <p class="description">Obtiene un dragón aleatorio del repositorio.</p>
+            <p class="description">Get a random dragon from Berk's dragon registry</p>
           </div>
           
           <div class="endpoint-card card" style="animation-delay: 0.3s">
@@ -482,11 +490,11 @@ app.get('/', (req, res) => {
               <span class="method">GET</span>
               <span class="path">/dragones/:id</span>
             </div>
-            <p class="description">Busca un dragón específico por su ID único.</p>
+            <p class="description">Find a dragon by its unique ID</p>
             <div class="params">
               <div class="param-item">
-                <span class="param-name">Ejemplo</span>
-                <span><a href="/dragones/1" style="color: var(--highlight);">/dragones/1</a></span>
+                <span class="param-name">Example</span>
+                <span><a href="/dragones/1" style="color: var(--highlight-light);">/dragones/1</a></span>
               </div>
             </div>
           </div>
@@ -496,19 +504,19 @@ app.get('/', (req, res) => {
               <span class="method">GET</span>
               <span class="path">/class</span>
             </div>
-            <p class="description">Obtiene todas las clases de dragones disponibles.</p>
+            <p class="description">Get all dragon classes from the Dragon Manual</p>
           </div>
           
           <div class="endpoint-card card" style="animation-delay: 0.5s">
             <div>
               <span class="method">GET</span>
-              <span class="path">/class/:nombre</span>
+              <span class="path">/class/:name</span>
             </div>
-            <p class="description">Obtiene información sobre una clase específica.</p>
+            <p class="description">Get information about a specific dragon class</p>
             <div class="params">
               <div class="param-item">
-                <span class="param-name">Ejemplo</span>
-                <span><a href="/class/Mystery" style="color: var(--highlight);">/class/Mystery</a></span>
+                <span class="param-name">Example</span>
+                <span><a href="/class/Mystery" style="color: var(--highlight-light);">/class/Mystery</a></span>
               </div>
             </div>
           </div>
@@ -518,33 +526,33 @@ app.get('/', (req, res) => {
       <footer>
         <div class="api-status">
           <span class="status-dot"></span>
-          <span>Estado: Operativo</span>
+          <span>Status: Operational</span>
         </div>
-        <p>🕒 Hora del servidor: ${serverTime}</p>
-        <p>Versión API: 2.5.0 | Última actualización: 15 Junio 2025</p>
-        <p>© 2025 API de Dragones - Todos los derechos reservados</p>
+        <p>🕒 Server Time: ${serverTime}</p>
+        <p>API Version: 1.0.0 | Dragon Database Updated: 2025-06-15</p>
+        <p>© 2025 Berk Dragon Archives - All rights reserved</p>
       </footer>
     </div>
     
     <script>
-      // Actualizar la hora cada minuto
+      // Update server time every second
       function updateServerTime() {
         const now = new Date();
-        const timeString = now.toLocaleString('es-ES', {
+        const timeString = now.toLocaleString('en-US', {
           hour: '2-digit',
           minute: '2-digit',
           second: '2-digit',
-          day: '2-digit',
-          month: 'long',
+          month: 'short',
+          day: 'numeric',
           year: 'numeric'
         });
         
-        document.querySelector('footer p:nth-child(2)').textContent = '🕒 Hora del servidor: ' + timeString;
+        document.querySelector('footer p:nth-child(2)').textContent = '🕒 Server Time: ' + timeString;
       }
       
       setInterval(updateServerTime, 1000);
       
-      // Efecto de scroll suave
+      // Smooth scroll effect
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
           e.preventDefault();
